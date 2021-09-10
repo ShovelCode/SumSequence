@@ -1,6 +1,17 @@
 #include <stdio.h>
 
 int main(void){
+	int choice = 1;
+	int sum = 0;
+	int num;
+	while(choice){
+		printf("Enter next number: ");
+		scanf("%d", &num);
+		sum += num;
+		printf("continuation number: ");
+		scanf("%d", &choice);
+	}
+	/*
 	//printf("testing output");
 	int argc = 0;
 	printf("Enter the amount of numbers that will be added: ");
@@ -18,5 +29,5 @@ int main(void){
 	int sum;
 	for(int j = 0; j < argc; j++){
 		sum += arr[j];
-	}
+	} */
 }
